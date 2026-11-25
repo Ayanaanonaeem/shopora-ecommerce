@@ -8,11 +8,8 @@ const Card = ({
   showCartItem,
   handleRemoveCart,
 }) => {
-  const { category, description, images, title, price } = data;
+  const { category, description, image, title, price } = data;
 
-  const image =
-    (Array.isArray(images) && images.length > 0 && images[0]) ||
-    "https://placehold.co/600x600/111827/94a3b8?text=Product";
 
   const categoryName =
     typeof category === "object" ? category?.name : category;

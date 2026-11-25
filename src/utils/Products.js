@@ -13,10 +13,10 @@
 
 export async function getAllProducts(){
     try {
-        const products= await fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=50')
+        const products= await fetch('https://fakestoreapi.com/products')
         .then((res)=>res.json())
         return products
     } catch (error) {
-        throw error("something went wrong")
+        throw error
     }
 }
